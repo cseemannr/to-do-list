@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="light-mode">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/7659b71f78.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-img"></div>
+    <div class="container">
+      <div class="header">
+        <h1>todo</h1>
+        <div class="toggle-mode-icons">
+          <div class="dark-mode-icon toggle-mode-icon active">
+            <i class="fa-solid fa-moon"></i>
+          </div>
+          <div class="light-mode-icon toggle-mode-icon">
+            <i class="fa-solid fa-sun"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-container">
+        <i class="fa-solid fa-check btn uncheck-btn input-container-icon"></i>
+        <input type="text" placeholder="Create a new todo" maxlength="100" />
+      </div>
+
+      <div class="list-container">
+        <ul></ul>
+
+        <div class="list-container-footer">
+          <p class="items-left">2 items left</p>
+
+          <div class="items-filter">
+            <p class="items-filter-all filter-selected">All</p>
+            <p class="items-filter-active">Active</p>
+            <p class="items-filter-completed">Completed</p>
+          </div>
+          <div>
+            <p class="clear-completed">Clear Completed</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="drag">Drag and drop to reorder list</div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        class="camila"
+        target="_blank"
+        href="https://www.linkedin.com/in/cseemann/"
+        >Camila Ramos</a
+      >.
+    </div>
+  </body>
+</html>
