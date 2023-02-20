@@ -86,7 +86,7 @@ document.addEventListener("keyup", (e) => {
 
 //clicks inside ul
 listEl.addEventListener("click", (e) => {
-  if (e.path[0].localName === "p" || e.path[0].localName === "ul") {
+  if (e.target.tagName === "p" || e.target.tagName === "ul") {
     return;
   }
 
